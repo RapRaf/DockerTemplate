@@ -95,19 +95,18 @@ Tieni presente che la configurazione di base fornita dovrebbe essere sufficiente
 
 Il servizio Node.js è configurato per l'ambiente di sviluppo e di produzione.
 
-Per avviare il servizio Node.js in modalità di **SVILUPPO**, vai al file docker-compose.yaml nella root directory e sul servizio node:
-
+**SVILUPPO**, usa l'url `http://hostname:3000` per gli strumenti Nuxt, configura il docker-compose.yaml:
 ```yaml
 node:
     build:
       context: ./nuxt_app
       target: dev
     ...
-    command: npm run start:dev
+    command: npm run dev
     ...
 ```
 
-Per avviare il servizio Node.js in modalità di **PRODUZIONE** assicurati di avere la build di nuxt_app pronta, vai al file docker-compose.yaml nella root directory e sistema il servizio node in base alle tue preferenze:
+**PRODUZIONE** assicurati di avere la build di nuxt_app pronta, configura il docker-compose.yaml:
 
 ```bash
 cd nuxt_app && npm run build
@@ -119,7 +118,7 @@ node:
       context: ./nuxt_app
       target: production
     ...
-    command: npm run pm2
+    command: npm run production
     ...
 ```
 
@@ -147,6 +146,6 @@ Per contribuire al progetto, segui questi passaggi:
 
 ### Segnalazione di Errori
 
-Se incontri problemi o errori in questo progetto, ti preghiamo di segnalarli aprendo una nuova issue nella sezione "Issues" di questa repository. Assicurati di includere tutti i dettagli pertinenti, come il sistema operativo, il browser (se applicabile) e una descrizione dettagliata del problema. Sarà un piacere cercare di risolvere i problemi insieme.
+Se incontri problemi o errori in questo progetto, ti prego di segnalarli aprendo una nuova issue nella sezione "Issues" di questa repository. Assicurati di includere tutti i dettagli pertinenti, come il sistema operativo, il browser (se applicabile) e una descrizione dettagliata del problema. Sarà un piacere cercare di risolvere i problemi insieme.
 
 Grazie per il tuo interesse e il tuo contributo a questo progetto! La tua partecipazione rende questo progetto migliore per tutti.

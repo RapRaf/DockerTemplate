@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "pm2": "pm2 start processes.json --no-daemon -i max",
     "build": "nuxt build",
     "dev": "nuxt dev --host",
+    "production": "pm2 start processes.json -i max",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",

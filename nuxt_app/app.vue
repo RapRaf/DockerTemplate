@@ -9,6 +9,7 @@
           <v-icon size="45" v-on:click="incr" class="h-margin20">mdi-plus</v-icon>
         </div>
         <v-icon size="45" v-on:click="reset" class="h-margin20">mdi-minus-circle</v-icon>
+        <div>PARLAI</div>
       </div>
     </v-main>
   </v-app>

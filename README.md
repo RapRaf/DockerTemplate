@@ -103,11 +103,15 @@ node:
       context: ./nuxt_app
       target: dev
     ...
-    command: npm run dev
+    command: npm run start:dev
     ...
 ```
 
-Per avviare il servizio Node.js in modalità di **PRODUZIONE**, vai al file docker-compose.yaml nella root directory e sul servizio node:
+Per avviare il servizio Node.js in modalità di **PRODUZIONE** assicurati di avere la build di nuxt_app pronta, vai al file docker-compose.yaml nella root directory e sistema il servizio node in base alle tue preferenze:
+
+```bash
+cd nuxt_app && npm run build
+```
 
 ```yaml
 node:

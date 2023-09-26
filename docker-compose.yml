@@ -56,9 +56,9 @@ services:
     container_name: node
     volumes:
       - ./nuxt_app:/src
-    command: npm run dev
+    command: npm run start:dev
     ports:
-      - "30000:30000"
+      - "3000:3000"
     environment:
       NODE_ENV: development
       DEBUG: nodejs-docker-express:*

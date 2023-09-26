@@ -29,12 +29,12 @@ Segue una guida passo-passo per l'installazione dell'ambiente di sviluppo:
 1. Clona questa repository sul tuo computer.
 
     ```bash
-    git clone https://github.com/RapRaf/DockerSample.git
+    git clone https://github.com/RapRaf/DockerTemplate.git
     ```
 
 2. Naviga nella directory del progetto e installa le dipendenze dei vari progetti.
     ```bash
-    cd DockerSample/laravel
+    cd DockerTemplate/laravel
 
     composer install
 

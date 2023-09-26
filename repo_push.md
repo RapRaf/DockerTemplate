@@ -25,3 +25,4 @@ First commit, created docker project
 ## 11/9/2023
 
 Fixed project to run on 8080 in parallel with host nginx on 80 and 443
+
